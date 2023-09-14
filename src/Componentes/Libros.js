@@ -30,7 +30,7 @@ export const Libros = () => {
     if (pageNumber) {
       axios
         .get(
-          api + apiKey + `&s=${name}` + "&type=movie" + `&page=${pageNumber}`
+          `${api + apiKey}&s=${name}&type=movie&page=${pageNumber}`
         )
         .then((res) => {
           if (res) {
@@ -41,7 +41,7 @@ export const Libros = () => {
       return;
     }
     axios
-      .get(api + apiKey + `&s=${name}` + "&type=movie" + "&page=1")
+      .get(`${api + apiKey}&s=${name}&type=movie&page=1`)
       .then((res) => {
         if (res) {
           setMovies(res.data.Search);
