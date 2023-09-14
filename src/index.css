@@ -1,0 +1,16 @@
+nav {
+  display:flex;
+  justify-content: space-around;
+  background-color: rgb(116, 106, 106);
+  color:aliceblue;
+}
+
+.nav-List {
+  display:flex;
+  justify-content: space-around;
+  width:35%;
+  list-style:none;
+  cursor:pointer;
+}
+
+

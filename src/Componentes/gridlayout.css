@@ -1,0 +1,51 @@
+.grid-layout {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "content sidebar"
+    "footer footer";
+  grid-template-rows: 60px auto 1fr auto 40px;
+  grid-template-columns: 1fr;
+  height: 100vh;
+}
+
+.header {
+  grid-area: header;
+  background-color: #bbcbeb;
+  padding: 10px;
+}
+
+
+.content {
+  display: flex;
+  grid-area: content;
+  background-color: #a6a6f7;
+  padding: 240px;
+
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: #ffffff; 
+  padding: 10px;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #222224;
+  padding: 6px;
+}
+
+/* Estilos adicionales */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+p {
+  margin: 0;
+}
+
+
+
